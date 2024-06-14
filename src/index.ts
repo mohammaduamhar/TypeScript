@@ -19,3 +19,14 @@
 // }
 
 // taxCal(20_000,2024)
+
+// let employee: {
+//     readonly id: number,
+//     name: string,
+//     retire:(data:Date) => void
+// } = {id:2024,name:
+//     'amhar',
+//     retire(data:Date){
+//         console.log(data)
+//     }
+// }
