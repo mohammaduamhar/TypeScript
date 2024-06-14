@@ -1,8 +1,12 @@
 "use strict";
-function taxCal(amount, year) {
-    if (year < 2023)
-        return amount * 0.1;
-    return amount * 0.3;
+function KgToLbs(weight) {
+    if (typeof weight === 'number') {
+        return weight * 2.2;
+    }
+    else {
+        return parseInt(weight) * 2.2;
+    }
 }
-taxCal(20000, 2024);
+KgToLbs(10);
+KgToLbs('10Kg');
 //# sourceMappingURL=index.js.map

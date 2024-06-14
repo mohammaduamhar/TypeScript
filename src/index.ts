@@ -31,15 +31,26 @@
 //     }
 // }
 
-type employee = {
-    readonly id: number,
-    name: string,
-    retire:(data:Date) => void
+// type employee = {
+//     readonly id: number,
+//     name: string,
+//     retire:(data:Date) => void
+// }
+
+// let employee: employee = {id:2024,name:
+//     'amhar',
+//     retire(data:Date){
+//         console.log(data)
+//     }
+// }
+
+function KgToLbs(weight: number|string): number{
+     if(typeof weight === 'number'){
+        return weight*2.2;
+     }else{
+         return parseInt(weight) * 2.2;
+     }
 }
 
-let employee: employee = {id:2024,name:
-    'amhar',
-    retire(data:Date){
-        console.log(data)
-    }
-}
+KgToLbs(10);
+KgToLbs('10Kg');
