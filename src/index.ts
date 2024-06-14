@@ -55,24 +55,31 @@
 // KgToLbs(10);
 // KgToLbs('10Kg');
 
-type Draggable ={
-    drag: () => void
-}
+// type Draggable ={
+//     drag: () => void
+// }
 
-type Droppable ={
-    drop: () => void
-}
+// type Droppable ={
+//     drop: () => void
+// }
 
-type DraggableDroppable = Draggable & Droppable;
+// type DraggableDroppable = Draggable & Droppable;
 
 
-let picture : DraggableDroppable = {
-    drag: () => {
-        console.log('dragging')
-    },
-    drop: () => {
-        console.log('dropping')
-    }
-}
+// let picture : DraggableDroppable = {
+//     drag: () => {
+//         console.log('dragging')
+//     },
+//     drop: () => {
+//         console.log('dropping')
+//     }
+// }
 
-picture.drag();
+// picture.drag();
+
+
+// literal (exact or specific)
+
+type Quantity = 50 | 100;
+
+let quantity: Quantity = 100;
