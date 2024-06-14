@@ -44,13 +44,35 @@
 //     }
 // }
 
-function KgToLbs(weight: number|string): number{
-     if(typeof weight === 'number'){
-        return weight*2.2;
-     }else{
-         return parseInt(weight) * 2.2;
-     }
+// function KgToLbs(weight: number|string): number{
+//      if(typeof weight === 'number'){
+//         return weight*2.2;
+//      }else{
+//          return parseInt(weight) * 2.2;
+//      }
+// }
+
+// KgToLbs(10);
+// KgToLbs('10Kg');
+
+type Draggable ={
+    drag: () => void
 }
 
-KgToLbs(10);
-KgToLbs('10Kg');
+type Droppable ={
+    drop: () => void
+}
+
+type DraggableDroppable = Draggable & Droppable;
+
+
+let picture : DraggableDroppable = {
+    drag: () => {
+        console.log('dragging')
+    },
+    drop: () => {
+        console.log('dropping')
+    }
+}
+
+picture.drag();

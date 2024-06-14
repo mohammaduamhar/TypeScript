@@ -1,12 +1,11 @@
 "use strict";
-function KgToLbs(weight) {
-    if (typeof weight === 'number') {
-        return weight * 2.2;
+let picture = {
+    drag: () => {
+        console.log('dragging');
+    },
+    drop: () => {
+        console.log('dropping');
     }
-    else {
-        return parseInt(weight) * 2.2;
-    }
-}
-KgToLbs(10);
-KgToLbs('10Kg');
+};
+picture.drag();
 //# sourceMappingURL=index.js.map
