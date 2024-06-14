@@ -30,3 +30,16 @@
 //         console.log(data)
 //     }
 // }
+
+type employee = {
+    readonly id: number,
+    name: string,
+    retire:(data:Date) => void
+}
+
+let employee: employee = {id:2024,name:
+    'amhar',
+    retire(data:Date){
+        console.log(data)
+    }
+}
