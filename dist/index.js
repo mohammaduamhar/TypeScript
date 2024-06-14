@@ -1,6 +1,8 @@
 "use strict";
-let age = 8;
-if (age < 10)
-    age += 10;
-console.log(age);
+function taxCal(amount, year) {
+    if (year < 2023)
+        return amount * 0.1;
+    return amount * 0.3;
+}
+taxCal(20000, 2024);
 //# sourceMappingURL=index.js.map
