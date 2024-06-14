@@ -80,6 +80,17 @@
 
 // literal (exact or specific)
 
-type Quantity = 50 | 100;
+// type Quantity = 50 | 100;
 
-let quantity: Quantity = 100;
+// let quantity: Quantity = 100;
+type Customer = {
+    birthday: Date;
+}
+
+function getCustomer (id :number) : Customer | null | undefined {
+    return id === 0 ? null : {birthday: new Date()};
+}
+
+let customer = getCustomer(1);
+console.log(customer?.birthday)
+
